@@ -102,7 +102,7 @@ cd knative-docs/code-samples/serving/hello-world/helloworld-python
 
    ```bash
    # Build and push the container on your local machine.
-   docker buildx build --platform linux/arm64,linux/amd64 -t "{username}/helloworld-python" --push .
+   docker buildx build --platform linux/arm64,linux/amd64 -t "ibnummuhammad/helloworld-python" --push ./code-samples/serving/hello-world/helloworld-python
    ```
 
 ## Deploying the app
