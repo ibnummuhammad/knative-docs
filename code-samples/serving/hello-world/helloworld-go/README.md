@@ -110,7 +110,7 @@ To build the sample code into a container, and push using Docker Hub, enter the 
 
 ```bash
 # Build and push the container on your local machine.
-docker buildx build --platform linux/arm64,linux/amd64 -t "{username}/helloworld-go" --push .
+docker buildx build --platform linux/arm64,linux/amd64 -t "ibnummuhammad/helloworld-go" --push ./code-samples/serving/hello-world/helloworld-go
 ```
 
 ### Deploying to knative
