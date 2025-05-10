@@ -5,9 +5,12 @@ metadata:
   namespace: default
 spec:
   template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "1"
     spec:
       containers:
-      - image: docker.io/{username}/helloworld-python
+      - image: docker.io/ibnummuhammad/helloworld-python
         env:
         - name: TARGET
           value: "Python Sample v1"
