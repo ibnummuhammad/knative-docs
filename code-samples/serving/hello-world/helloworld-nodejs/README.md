@@ -176,14 +176,14 @@ folder) you're ready to build and deploy the sample app.
    ```
    kubectl get ksvc helloworld-nodejs  --output=custom-columns=NAME:.metadata.name,URL:.status.url
    NAME                URL
-   helloworld-nodejs   http://helloworld-nodejs.default.1.2.3.4.sslip.io
+   helloworld-nodejs   http://helloworld-nodejs.default.example.com
    ```
 
 1. Now you can make a request to your app and see the result. Replace
    the following URL with the URL returned in the previous command.
 
    ```bash
-   curl http://helloworld-nodejs.default.1.2.3.4.sslip.io
+   curl -H "Host: helloworld-nodejs.default.example.com" http://192.168.100.197:80
    Hello Node.js Sample v1!
    ```
 
